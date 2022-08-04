@@ -40,20 +40,21 @@ body{
     background: #fff;
     box-shadow: var(--box-shadow);
     max-height: 80px;
-    z-index: 1000;
+    z-index: 2000;
     
 }
 .header .navbar{
-    width: 40%;
+    width: 60%;
     justify-content: space-evenly;
     display: flex;
-    gap: 20px;
 
 }
+.header .navbar a{
+    margin: 0 1rem;
+}
 .header .logo {
-    font-size: 2.5rem;
-    font-weight: bolder;
-    color: var(--black);
+    margin-left: 0;
+    margin-right: 20rem;
 }
 .header .logo img{
     overflow: hidden;
@@ -66,23 +67,21 @@ body{
     width: 4.5rem;
     line-height: 4.5rem;
     border-radius: .5rem;
-    background: #eee;
-    color: var(--black);
+    background: #472a7c;
+    color: #fff;
     font-size: 2rem;
     margin-right: .3rem;
     text-align: center;
     cursor: pointer;
 }
 .header .icons div:hover{
-    background: var(--orange);
+    background: #472a7c;
     color: #fff;
 }
 #menu-btn{
     display: none;
 }
-#menu-2{
-    display: none;
-}
+
 
 
 .btn{
@@ -110,9 +109,9 @@ body{
     color: var(--clr2);
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 400;
-    padding: 10px 10px;
+    padding: 10px 5px;
     transition: 0.5s;
     border: 1px solid var(--clr2) ;
     border-radius: 5px;
@@ -120,6 +119,7 @@ body{
 }
 .btn-sc:hover{
     letter-spacing: 0.25rem;
+    border: 2px solid #FFC73C;
     background-color:var(--clr2) ;
     color: #fff;
     box-shadow: 0 0 35px var(--clr2);
@@ -382,7 +382,7 @@ section{
 }
 .info-main{
     width: 105%;
-    height: 400px;
+    height: 450px;
     background: url(../images/meeting.jpg) no-repeat;
     background-position: center;
     background-size: cover;
@@ -396,7 +396,7 @@ section{
 
     position: relative;
     background: rgba(255, 255, 255, 0.447);
-    width: 250px;
+    width: 200px;
     height: 300px;
     align-items: center;
     justify-content: space-around;
@@ -404,7 +404,7 @@ section{
 }
 .info .info-main .infobox h1{
     text-align: center;
-    font-size: 3rem;
+    font-size: 2.3rem;
     font-weight: 400;
     color: #472a7c;
 }
@@ -532,7 +532,7 @@ section{
 
 
 
-@media (max-width:991px) {
+@media (max-width:1050px) {
     html{
         font-size: 55%;
     }
@@ -542,19 +542,20 @@ section{
     section{
         padding: 2rem;
     }
+    .info .info-main .infobox{
+        max-height: 150px;
+        padding: 2rem 1rem;
+    }
 }
 
-@media (max-width:800px) {
+@media (max-width:900px) {
     #menu-btn{
         display: inline-block;
     }
-    #menu-2{
+    #menu-1{
         display: inline-block;
     }
-    
-    #menu-1{
-        display: none;
-    }
+  
     .header{
         justify-content:space-between; 
     }
@@ -605,6 +606,24 @@ section{
     }
     .wavetext h2{
         font-size: 4rem;
+    }
+    .info-main{
+        height: 550px;
+    }
+    
+    .info .info-main .infobox{
+        height: 100px;
+        padding: 1.5rem 0.7rem;
+        width: 300px;
+        margin-top: 1px;
+    }
+    
+    .info .info-main .infobox h1{
+        font-size: 1.8rem;
+    }
+    
+    .info .info-main .infobox h2{
+        font-size: 1.2rem;
     }
    
 }

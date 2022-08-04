@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>MILLENNIUM System Solution</title>
-    <link rel="icon" href="../images/logo.png" type="image/x-icon">
+    <link rel="icon" href="./images/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="stylesheet" href="../Css/style.css">
+    <link rel="stylesheet" href="./Css/style.css">
 
 </head>
 <body>
@@ -16,30 +16,19 @@
 <!-- Header Section --> 
 <header class="header">
 
-    
-    <nav class="navbar" id="menu-1">
-        <a class="btn" style="--clr:#FFC73C;--clr2:#472a7c" href=""><span>Home</span> <i></i></a>
+
+    <a href="index.html" class="logo"><img src="./images/logo.png" alt=""></a>
+
+
+    <nav class="navbar menua" id="menu-1">
+        <a class="btn-sc" style="--clr:#FFC73C;--clr2:#472a7c" href=""><span>Home</span> <i></i></a>
         <a class="btn-sc" style="--clr:#FFC73C;--clr2:#472a7c" href=""><span>Services</span> <i></i></a>
-        <a class="btn-sc" style="--clr:#FFC73C;--clr2:#472a7c" href=""><span>Trainings</span> <i></i></a>
-    </nav>
-
-    <a href="#" class="logo"><img src="../images/logo.png" alt=""></a>
-
-
-    <nav class="navbar" id="menu-1">
- 
+        <a class="btn-sc" style="--clr:#FFC73C;--clr2:#472a7c" href=""><span>Trainings</span> <i></i></a> 
         <a class="btn-sc" style="--clr:#FFC73C;--clr2:#472a7c" href=""><span>Tecnologies</span> <i></i></a>
         <a class="btn-sc" style="--clr:#FFC73C;--clr2:#472a7c" href=""><span>About Us</span> <i></i></a>
         <a class="btn-sc" style="--clr:#FFC73C;--clr2:#472a7c" href=""><span>Contact Us</span> <i></i></a>
     </nav>
-    <nav class="navbar menua" id="menu-2">
-        <a href="">Home</a>
-        <a href="">Services</a>
-        <a href="">Trainings</a>
-        <a href="">Tecnologies</a>
-        <a href="">About Us</a>
-        <a href="">Contact Us</a>
-    </nav>
+
     <div class="icons">
         <div class="fas fa-bars" id="menu-btn"></div>
     </div>
@@ -199,7 +188,7 @@
                     return anime.random(1,5);
                 },
                 easing: 'linear',
-                duration: 3000,
+                duration: 2000,
                 delay: anime.stagger(20),
                 complete: animateBlocks,
             })
