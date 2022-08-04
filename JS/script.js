@@ -5,5 +5,6 @@ document.querySelector('#menu-btn').onclick = () =>{
 }
 
 window.onscroll = () =>{
-    menu.classList.remove('active')
+    menu.classList.remove('active');
 }
+

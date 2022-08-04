@@ -16,30 +16,19 @@
 <!-- Header Section --> 
 <header class="header">
 
-    
-    <nav class="navbar" id="menu-1">
-        <a class="btn" style="--clr:#FFC73C;--clr2:#472a7c" href=""><span>Home</span> <i></i></a>
+
+    <a href="index.html" class="logo"><img src="./images/logo.png" alt=""></a>
+
+
+    <nav class="navbar menua" id="menu-1">
+        <a class="btn-sc" style="--clr:#FFC73C;--clr2:#472a7c" href=""><span>Home</span> <i></i></a>
         <a class="btn-sc" style="--clr:#FFC73C;--clr2:#472a7c" href=""><span>Services</span> <i></i></a>
-        <a class="btn-sc" style="--clr:#FFC73C;--clr2:#472a7c" href=""><span>Trainings</span> <i></i></a>
-    </nav>
-
-    <a href="#" class="logo"><img src="./images/logo.png" alt=""></a>
-
-
-    <nav class="navbar" id="menu-1">
- 
+        <a class="btn-sc" style="--clr:#FFC73C;--clr2:#472a7c" href=""><span>Trainings</span> <i></i></a> 
         <a class="btn-sc" style="--clr:#FFC73C;--clr2:#472a7c" href=""><span>Tecnologies</span> <i></i></a>
         <a class="btn-sc" style="--clr:#FFC73C;--clr2:#472a7c" href=""><span>About Us</span> <i></i></a>
         <a class="btn-sc" style="--clr:#FFC73C;--clr2:#472a7c" href=""><span>Contact Us</span> <i></i></a>
     </nav>
-    <nav class="navbar menua" id="menu-2">
-        <a href="">Home</a>
-        <a href="">Services</a>
-        <a href="">Trainings</a>
-        <a href="">Tecnologies</a>
-        <a href="">About Us</a>
-        <a href="">Contact Us</a>
-    </nav>
+
     <div class="icons">
         <div class="fas fa-bars" id="menu-btn"></div>
     </div>
@@ -90,7 +79,7 @@
             <div class="workbox">
                 <div>
                     <h3>01</h3>
-                    <img src="./images/library.png" alt="">
+                    <img src="../images/library.png" alt="">
                     <h2>Library <br> Management</h2>
                 </div>
             
@@ -100,7 +89,7 @@
             <div class="workbox">
                 <div>
                     <h3>02</h3>
-                     <img src="./images/software.png" alt="">
+                     <img src="../images/software.png" alt="">
                     <h2>Custom <br> Software</h2>
                 </div>
             </div>
@@ -109,7 +98,7 @@
         <div class="workbox">
             <div>
                 <h3>03</h3>
-                <img src="./images/maintain.png" alt="">
+                <img src="../images/maintain.png" alt="">
                 <h2>SOFTWARE MAINTENANCE AND SUPPORT</h2>
             </div>
         </div>
@@ -118,7 +107,7 @@
         <div class="workbox">
             <div>
                 <h3>04</h3>
-                <img src="./images/web.png" alt="">
+                <img src="../images/web.png" alt="">
                 <h2>Web <br> Management</h2>
             </div>
         </div>
@@ -156,19 +145,19 @@
     <div class="trainer">
         <div class="card2">
             <div class="content">
-                <div class="imgBx"><img src="./images/boy@4x.png" alt=""></div>
+                <div class="imgBx"><img src="../images/boy@4x.png" alt=""></div>
                 <h3>Someone Name<br><span>Creative Designer</span></h3>
             </div>
         </div>
         <div class="card2">
             <div class="content">
-                <div class="imgBx"><img src="./images/girl@4x.png" alt=""></div>
+                <div class="imgBx"><img src="../images/girl@4x.png" alt=""></div>
                 <h3>Someone Name<br><span>Creative Designer</span></h3>
             </div>
         </div>
         <div class="card2">
             <div class="content">
-                <div class="imgBx"><img src="./images/boy@4x.png" alt=""></div>
+                <div class="imgBx"><img src="../images/boy@4x.png" alt=""></div>
                 <h3>Someone Name<br><span>Creative Designer</span></h3>
             </div>
         </div>
@@ -176,8 +165,8 @@
 </section>
 <!-- Traineers list end -->
 
-<script src="./JS/script.js"></script>
-    <script src="./JS/anime.min.js"></script>
+<script src="../JS/script.js"></script>
+    <script src="../JS/anime.min.js"></script>
     
     <script>
         const home = document.querySelector('.home')
@@ -199,7 +188,7 @@
                     return anime.random(1,5);
                 },
                 easing: 'linear',
-                duration: 3000,
+                duration: 2000,
                 delay: anime.stagger(20),
                 complete: animateBlocks,
             })
